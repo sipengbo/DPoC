@@ -1,0 +1,236 @@
+\documentclass{ieeeaccess}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\begin{document}
+\history{Date of publication xxxx 00, 0000, date of current version xxxx 00, 0000.}
+\doi{10.1109/ACCESS.2017.DOI}
+
+\title{DPoC: Distributed Proof of Correctness for Blockchain in Edge Computing Systems}
+\author{\uppercase{Pengbo Si}\authorrefmark{1,2}, \IEEEmembership{Senior Member, IEEE},
+\uppercase{Hang Yu}\authorrefmark{1}, 
+\uppercase{F. Richard Yu}\authorrefmark{3}, \IEEEmembership{Fellow, IEEE},
+\uppercase{Chao Fang}\authorrefmark{1,2}, \IEEEmembership{Member, IEEE},
+\uppercase{Vincent Okello}\authorrefmark{1,4},
+\uppercase{Yanhua Zhang}\authorrefmark{1,2}
+\address[1]{Faculty of Information Technology, Beijing University of Technology, Beijing 100124  China}
+\address[2]{Beijing Advanced Innovation Center for Future Internet Technology, Beijing University of Technology, Beijing 100124 China}
+\address[3]{Department of Systems and Computer Engineering, Carleton University, Ottawa, ON K1S 5B6, Canada}
+\address[4]{College of International Education, Beijing University of Technology, Beijing 100124 China}}
+\tfootnote{This work was jointly supported by the National Natural Science Foundation of China under Grant 61671029, and Beijing Nova Program under Grant XX2017095.}
+
+\markboth
+{Si \headeretal: DPoC: Distributed Proof of Correctness for Blockchain in Edge Computing Systems}
+{Si \headeretal: DPoC: Distributed Proof of Correctness for Blockchain in Edge Computing Systems}
+
+\corresp{Corresponding author: Chao Fang (e-mail: fangchao@bjut.edu.cn).}
+
+\begin{abstract}
+In recent years, cryptocurrency has become popular all over the world, and the corresponding blockchain technology has begun to flourish and combine with the maturity of the current technology. Nowadays, the technology of combining blockchain and Internet of Things has entered people's field of vision. Blockchain traceability technology, people expect that the Internet of Things system can have some features in the blockchain, such as data can not be falsified, decentralized, and the consensus mechanism as a trust system. But now there are still some shortcomings in the combination of the two (such as security issues), making it difficult to apply to life as a mature technology. In this paper, we have designed a quality monitoring system for industrial and agricultural products and their production activities, using multi-sensor acquisition data and data fusion algorithms. Moreover, the blockchain technology is adopted, and the consensus mechanism compatible with the system is designed, and the structure of distributed verification is added, and the related problems are solved from the system architecture and consensus.
+\end{abstract}
+
+\begin{keywords}
+Blockchain, consensus, distributed verification, edge computing
+\end{keywords}
+
+\titlepgskip=-15pt
+
+\maketitle
+
+\section{Introduction}
+\label{sec:introduction}
+\PARstart{T}{he} Internet of Things is a world of all things connected by using a variety of sensing technologies, modern network technologies, and artificial intelligence and automation technologies to aggregate and integrate applications. With the introduction of the "Internet of Things", governments and enterprises have begun to increase their emphasis on the "Internet of Things." In foreign countries, IBM's "Smart Earth" has been promoted to the US national strategy. At home, the Internet of Things has gradually Incorporating into industries such as industry, agriculture, finance, and medicine, China proposes a ��perceived China�� IoT development strategy, focusing on the four major challenges of ��security, energy consumption, transmission, and processing�� faced by information technology development. However, there are some problems in the Internet of Things, such as the authenticity of data is difficult to verify. That is, the source fraud problem, the security mentioned in the literature to improve the physical layer, has not effectively solved this problem[1]. Blockchain technology, as the underlying technology of Bitcoin, has received extensive attention at home and abroad since 2013. In 2017, the Ministry of Industry and Information Technology of China has established a research institute for the Trusted Blockchain Open Lab to support The continued development of blockchain technology in China. Due to the characteristics of decentralization and collective maintenance, trust, non-tampering and traceability, anonymity and security, the blockchain is used in the fields of Internet of Things, logistics supply chain, communication, big data, artificial intelligence and other industries. excellent[2]. The development of the combination of blockchain technology and the Internet of Things, is also a focus of attention in the world, the conclusion in the literature, blockchain and The combination of the Internet of Things is powerful and can lead to major shifts in multiple industries, paving the way for new business models and novel distributed applications[3]. When the blockchain technology is combined with the industrial and agricultural IoT system, there are still some problems. For example, although the data cannot be tampered with in the chain, the incoming data cannot be verified from the source, that is, it exists in the Internet of Things mentioned above. The problem is the same, but after joining the blockchain mechanism, we hope to find a better solution.
+
+The scenario to be used in this paper is that there are farms, fruit shops, and customers who grow fruits in the scene. The fruit shop buys from the farm and the customer buys it from the fruit shop. This paper intends to address the security issues of sensor data tamper resistance and product quality issues as well as a convenient scenario for customers to query data and results.
+
+The innovation of this paper is to deal with the security of the blockchain when it is combined with industry and agriculture through system architecture and consensus. It mainly refers to preventing data from being tampered with when data is entered into the chain (that is, the problem of data source fraud) and blockchain. The problem of bad nodes or negative nodes in the system, and solve the problem of tokens, that is, no digital currency is needed to support the operation of the system.
+
+\section{Background and Related Work}
+
+\subsection{Distributed Edge Computing Networks}
+
+\subsection{Consensus in Distributed Ledger Systems}
+
+\subsection{Challenges}
+
+\section{Distributed Proof-of-Correctness}
+
+In this section, the network architecture, data verification algorithm, as well as the smart contract and block construction to facilitate DPoC consensus in edge computing systems is proposed.
+
+\subsection{Network Architecture}
+
+As shown in Fig. 2, the four-layer network architecture 
+
+From the architectural design point of view, the blockchain can be simply divided into three levels, namely the protocol layer, the extension layer and the application layer. The protocol layer can be further divided into a storage layer and a network layer, which are independent but inseparable.
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.4\textwidth]{fig3}
+\caption{Architecture diagram.}
+\label{f}
+\end{center}
+\end{figure}
+
+As shown in the Fig.1, the network layer and the storage layer are connected by smart contracts, and the nodes and representatives are connected by state indicators. The protocol layer is the bottom layer in the architecture, which is the main content of the blockchain products, and builds a consensus-based network structure and storage layer. The chain structure, in which the network layer, as described in the scene, the small black dots correspond to ordinary nodes, and the white circles represent them. The extension layer is an extension of the function of the blockchain product, making it more practical. The smart contract makes the network layer and the storage layer more securely interact, and the data storage and sharing is an extension of convenience. The application layer is a user-oriented layer that meets the needs of users when using blockchain products, such as wallets, and status indicators in wallets.
+
+\subsection{Data Correctness Verification}
+
+\subsection{Smart Contracts}
+
+\begin{itemize}
+\item Input raw data $q$, anti-tamper detection algorithm $a$, $b$, $c$;
+\item The representative $N$ is randomly divided into three groups of $A$, $B$, and $C$, corresponding to three algorithms of $a$, $b$, and $c$;
+\item Group A uses the a algorithm to obtain a set of results $[A(x)]$ with a value of 0 or 1.
+\end{itemize}
+
+\subsection{Block Construction}
+
+As shown in the Fig.2, the blockchain technology used in this system has a Turing-complete scripting language (such as Ethereum), and has a representative node distribution structure (similar to the structure of the DPOS consensus mechanism), data in the industrial and agricultural Internet of Things, It is heterogeneous data from multiple sensors. It is written into the blockchain through the edge node calculation, and is called by contract. The node with the representative identity uses the data fusion algorithm in the contract form to perform security detection on the data and obtain the processing result. After the design consensus, the final result is obtained, and the processing result from the IoT data of the industry and agriculture is written into the blockchain for the nodes of the whole network to view.
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.49\textwidth]{fig1}
+\caption{System flow chart.}
+\label{f}
+\end{center}
+\end{figure}
+
+\section{Distributed Consensus for Verification Result}
+
+\subsection{Phase I}
+
+\subsection{Phase II}
+
+\subsection{Design Ideas}
+Consensus mechanism is the great success of modern distributed computing science. It uses encryption technology as a support to support many applications, including cryptocurrency, smart contracts, arbitration, voting, etc., and nodes communicate through asynchronous messaging[4].
+
+The structure of the DPOS consensus mechanism is that all nodes on the chain vote, and the first N digits with the highest number of votes are generated according to the rules, that is, the billing rights are obtained. When voting, all representatives have the same weight, that is, $1/N$. This system draws on the DPOS consensus mechanism, and all nodes in the chain vote to elect representatives. In reality, they represent their identity characteristics. Therefore, the nodes on the chain make voting choices among these nodes with some identity characteristics. The application scenario will be described in detail. The representative is supervised by the node, and the non-performance will be revoked. Each wallet will display a status indicator to let the user know how their representative performs, and can choose to switch to another representative if the representative is unable to perform their duties (such as when When it was their turn, they failed to generate blocks. They would be delisted and the network would choose new representatives to replace them. The whole consensus mechanism of DPOS still relies on tokens. Many commercial applications do not need tokens. The consensus mechanism designed in this paper does not need the support of tokens in some scenarios described in Chapter 4. In addition, in DOPS, the representatives only take turns to generate billing rights, and the voting weights are the same. In the design of this paper, the weights of the delegates voting are not equal, but the weights are determined according to some settings. The three chapters will explain in detail, and also fulfill the responsibility of processing the data. The delegates take turns to obtain the billing rights and the responsibility of processing the data. If they are not executed, they will be regarded as passive nodes and their representatives will be disqualified as appropriate.
+
+In the application scenario mentioned in the first chapter, the sensor data in the farm where the fruit is grown is used as the source of the data, the fruit shop owner as the representative node, the customer as the ordinary node, the representative and the node, the representative and the representative node All want high quality products (because the sensor data of the test products are also seen by the customer nodes) prompting them to maintain honest and positive nodes. The representative will not process the data and call the contract, it will be marked, the mark will be replaced a certain number of times, and the person who chooses the representative can also check the representative mining situation and participate in the contract to decide whether to change the representative. For the representative (fruit shop), the node that voted for itself will choose to purchase the product by itself. If it is replaced, these nodes (customers) will not choose to purchase by themselves, which is also a loss. Therefore, in this scenario, the representative is maintained. The importance of this, as well as the disqualification of the structure that has a loss to the representative, does not require token support, so the algorithm code that exists in the form of a contract is not required to pay the cost of calling the contract like Ethereum.
+
+
+\subsection{Process Step}
+As shown in Fig.3, after the sensor obtains the data, it sends it to the edge node through the communication protocol, and the data is chained at the edge node. Each representative calls the original data through the contract 1 and obtains a random data fusion algorithm (the algorithm exists in the form of a contract, the contract 1. Contract 2 can call these algorithms written in these contracts. It is proposed to use three anti-tamper detection algorithms to divide the representative approximate average into three groups, corresponding to three algorithms. After the delegates process the data, it is determined whether the data is The falsified conclusion is sent to Contract 1, and the results of the representatives using the same algorithm are categorized using a minority-subordinate majority rule. If the three algorithms have the same conclusion, they are chained and trigger Contract 3. If there are differences in the three conclusions, in this case, because there are three security detection algorithms, there are multiple objection representatives, the minority can only be an algorithm, then the contract 2 is triggered, and the contract 2 calls ��no objection��. The algorithm, the delegates are going to call the contract 2, to run the algorithm, the contract 2 and then the output is closed. 
+
+At this time, the collapsed output, instead of using the principle of majority obeying the majority, sets a number of points for each delegate, whenever this results obtained by the representative (the results of the tamper-proof and the data processing) are the same as the final output, and the representative is given the same amount of points (when the number of points of a representative does not meet certain requirements, Delisted), and at this time, in the output, the weight of each representative is given to each delegate's different weights when voting for the conclusion of the contract 2, which greatly guarantees that even if the active node is a minority in the contract 2 Can form a correct consensus. When the conclusion is that the data has been tampered with, the result is written into the chain, and all nodes can know the result of the data being tampered. When the conclusion is that the data has not been tampered with, the contract 3 is triggered, and the delegates process the data separately. The decision layer fusion of the target attribute is performed by voting according to the weighting bonus described above, and the voting result (that is, the consistent description of the target attribute by more representatives) is obtained from each representative. The conformance description is posted to the chain. Data security detection and data processing are sequential in order of time. Security detection is first performed to perform data target attribute decision layer fusion processing. On the other hand, the three algorithms are used to verify whether the data has been tampered with. When a malicious node is a minority, entering the contract 2 can be regarded as a waste of resources. Using multiple algorithms will increase the probability of objection in this case. That caused a greater waste of resources.
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.49\textwidth]{fig2}
+\caption{Consensus mechanism.}
+\label{f}
+\end{center}
+\end{figure}
+
+\section{Use Cases}
+
+\subsection{Multi-Agent Machine Learning}
+
+\subsection{Agricultural IoT}
+
+\subsection{Crowd Sensing}
+
+\section{Performance Analysis and Evaluation Results}
+
+\subsection{Integrity}
+
+\subsection{Security}
+
+\subsection{Complexity}
+
+The consensus mechanism described in Chapter 3 is available. Entering Contract 2 can be regarded as a waste of resources. The total number of representatives is N, and the number of malicious representatives is $Q$. When $Q > N/2$, the system will enter an unstable state. When $N/2 > Q > N/6$, whether to enter the contract 2 is related to $N$ and $Q$, and the probability of entering the contract 2 is $p(N,Q)$. When $Q < N/6$, the system will not enter the contract 2. , that is, $p(N,Q)=0$.
+
+In general, the resource consumption of algorithm 1 is set to $a$, the resource consumption of algorithm 2 is set to $b$, the resource consumption of algorithm 3 is set to $c$, the consumption of contract 2 is set to $E$, and the total consumption of tamper detection is set to $f$. This is the sum of the consumption of Contract 1 and Contract 2. Let $Q$ be a fixed value, and get $f = (a + b + c) \cdot \frac{N}{3} + E \times p(Q,N) \cdot N$.
+
+Using a large number of repeated experiments to obtain $p(Q, N)$, according to the R-square value, choose the Gaussian approximation method, ie
+$p(Q,N) = a_1  \cdot \frac{N}{3}$, $a1$, $b1$, $c1$ belong to $R$.
+
+The fmin and the corresponding total representative number $N$ are obtained, and the value range of the comprehensive $N(N/2>Q>0)$, that is, the minimum number of representative setting schemes is consumed.
+
+\subsection{Simulation Results}
+Let $a=b=c$, that is, assume that the three algorithms consume the same. Using matlab software, using the method of repeated random test, it is concluded that when $Q$ is a fixed value, the fitting function of $N$ and $P$ and fmin correspond to $N$.
+
+When $Q=50$, the relationship between $N$ and $P$.
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.45\textwidth]{fig4}
+\caption{When $Q=50$, the relationship between $N$ and $P$.}
+\label{f}
+\end{center}
+\end{figure}
+
+
+The selection $P$ is at the point of (0, 1) and is fitted by Gaussian approximation.
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.45\textwidth]{fig5}
+\caption{When $Q=50$,Gaussian fitting when $Q=50$.}
+\label{f}
+\end{center}
+\end{figure}
+
+Get $fmin=140.2894a$. The corresponding $N$ is 135.
+
+When $Q=100$, the relationship between $N$ and $P$.
+The selection $P$ is at the point of (0, 1) and is fitted by Gaussian approximation.
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.45\textwidth]{fig6}
+\caption{When $Q=100$, the relationship between $N$ and $P$.}
+\label{f}
+\end{center}
+\end{figure}
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.45\textwidth]{fig5}
+\caption{When $Q=100$,Gaussian fitting when $Q=100$.}
+\label{f}
+\end{center}
+\end{figure}
+When $Q=150$, the relationship between $N$ and $P$.
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.45\textwidth]{fig6}
+\caption{When $Q=150$, the relationship between $N$ and $P$.}
+\label{f}
+\end{center}
+\end{figure}
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.45\textwidth]{fig5}
+\caption{When $Q=150$,Gaussian fitting when $Q=150$.}
+\label{f}
+\end{center}
+\end{figure}
+It is also possible that as $Q$ increases, both $N$ and the corresponding fmin increase. 
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.3\textwidth]{fig2}
+\caption{The area with virtual grids.}
+\label{f}
+\end{center}
+\end{figure}
+
+\section{Conclusions}
+
+In this paper, a distributed proof of correctness for blockchain in green Internet of Things has been proposed. In the IoT scenario, the correctness of the collected data is the key issue of the system. In the proposed consensus scheme, we adopted machine learning algorithms to reduce the probability of data been tampered with. Simulation results demonstrate the system performance improvement.
+
+\begin{thebibliography}{00}
+
+\bibitem{b1} S.Chowdhary, S.Som, V.Tuli, et al,  ��Security solutions for physical layer of IoT,�� International Conference on INFOCOM Technologies and Unmanned Systems, 2018.
+\bibitem{b2} PA.Ma, X.Pan, L.Wu, et al. ��A Survey of the Basic Technology and Application of Block Chain�� Journal of Information Security Research, 2017.
+\bibitem{b3} O.Novo, ��Blockchain Meets IoT: An Architecture for Scalable Access Management in IoT, ��IEEE Internet of Things Journal, vol.5, no. 2, pp. 1184-1195, 2018.
+\bibitem{b4} P.George, S.Ilya, ��Mechanising blockchain consensus,�� CPP 2018 - Proceedings of the 7th ACM SIGPLAN International Conference on Certified Programs and Proofs, Co-located with POPL 2018.
+
+\end{thebibliography}
+
+\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{a1.png}}]{Pengbo Si} (SM'15)
+\end{IEEEbiography}
+
+\EOD
+
+\end{document}
